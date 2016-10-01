@@ -1,0 +1,158 @@
+/*started work in 29/08/2016
+ *font-family: 'Baloo Paaji', cursive;
+ *font-family: 'Ubuntu', sans-serif;
+ *font-family: 'Covered By Your Grace', cursive;
+*/
+body{
+    height: 2000px    
+}
+header{
+    position:relative;
+}
+header .overlay{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    height:100%;
+    background-color:rgba(3,3,3,0.6)
+}
+header .main-images{
+    width:100%;
+    height:100%;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+header .caption{
+    position:absolute;
+    top:62%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+header .caption .search-box {
+    border:1px solid rgba(225,225,225,0.3);
+    border:1px solid #FFF;
+    z-index:5;
+    position:relative;
+    background-color:rgba(225,225,225,0.1);
+    background-color:#FFF;
+    font-family: 'Ubuntu', sans-serif;
+}
+header .caption .results-label h2{
+    font-size:35px;
+    color:#fff;
+    font-family: 'Baloo Paaji', cursive;
+}
+header .caption .results-label h2 span{
+    color:#6d0909;
+    font-size:40px;
+}
+header .caption .search-box .ui.dropdown .menu{
+
+}
+header .caption .search-box input{
+    background:none;
+    border:none;
+    width:320px;
+    padding:14px;
+}
+header .caption .search-box input::-webkit-input-placeholder{
+    color:#666
+}
+header .caption .search-box .ui.search.dropdown>.text{color:#444}
+header .caption .search-box .ui.selection.dropdown>.dropdown.icon{color:#999}
+header .caption .search-box input:focus,
+header .caption .search-box select:focus{outline:none}
+header .caption .search-box select{
+    border:none;
+    background:none;
+    color:#d0d0d0;
+    border-left:1px solid rgba(225,225,225,0.1);
+    border-right:none;
+    padding:10px;
+}
+header .caption .search-box .ui.selection.dropdown{
+    border:none !important;
+    background:none !important;
+    color:#d0d0d0;
+    border-left:1px solid #ddd !important;
+    border-right:none;
+    padding:10px;
+    min-width:140px;
+    width:140px
+}
+.ui.selection.dropdown .menu>.item{font-size:12px}
+/*end header section */
+
+nav{
+    position:absolute;
+    top:0;
+    width:100%;
+    padding:10px 0;
+    z-index:9
+}
+.white{
+    background-color: #fff;
+    border-bottom:1px solid #CCC
+}
+.white .logo h3{
+    color: #6d0909
+}
+.white .nav-menu li{
+    color :#6d0909
+}
+.white .nav-menu li a{
+    color :#6d0909
+}
+nav .logo h3{
+    margin-top:0;
+    margin-bottom:0;
+    color:#a7a7a7;
+    font-family: 'Ubuntu', sans-serif;
+}
+nav .logo h3 span{
+    color:#6d0909;
+    font-weight: bold;
+}
+nav .nav-menu{
+    text-align:right;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom:0
+} 
+nav  .nav-menu li{
+    display:inline-block;
+    margin:0 20px;
+    color:#a7a7a7;
+    font-size:16px;
+    text-transform: capitalize
+}
+nav  .nav-menu li a{
+    text-decoration:none;
+    display:inline-block;
+    color:#a7a7a7;
+    transition:color 0.2s ease-in-out
+}
+nav  .nav-menu li button{
+    background:none;
+    border:1px solid #a7a7a7;
+    border-radius:3px;
+    padding:3px 10px 5px;
+    text-transform: capitalize;
+    transition:color 0.2s ease-in-out
+}
+nav  .nav-menu li a:hover,
+nav  .nav-menu li button:hover{
+    color:#fff
+}
+.white .nav-menu li a:hover{color:#6d0909}
+.white  .nav-menu li button{transition:all 0.2s ease-in-out}
+.white  .nav-menu li button:hover{
+    background-color:#6d0909;
+    color:#fff;
+    border:1px solid #6d0909;
+}
+
+/*end nav section */

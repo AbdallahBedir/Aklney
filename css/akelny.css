@@ -1,0 +1,445 @@
+/*started work in 24/08/2016
+ *font-family: 'Baloo Paaji', cursive;
+ *font-family: 'Ubuntu', sans-serif;
+ *font-family: 'Covered By Your Grace', cursive;
+*/
+body{
+    font-family: 'Baloo Paaji', cursive !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+.no-padding{
+    padding-right:0 !important;
+    padding-left:0 !important;
+}
+/*start header section */
+
+header{
+    position:relative
+}
+header .overlay{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    height:100%;
+    background-color:rgba(3,3,3,0.6)
+}
+header .main-images{
+    width:100%;
+    height:100%;
+    /*
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    */
+}
+header .caption{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%)
+}
+header .caption .slogan h1{
+    color:#fff;
+    font-family: 'Baloo Paaji', cursive;
+    font-size:50px;
+    margin-top:0
+}
+header .caption .slogan h1 span{
+    color:#6d0909
+}
+header .caption .search-box {
+    border:1px solid rgba(225,225,225,0.3);
+    border:1px solid #FFF;
+    z-index:5;
+    position:relative;
+    background-color:rgba(225,225,225,0.1);
+    background-color:#FFF;
+    font-family: 'Ubuntu', sans-serif;
+}
+header .caption .search-box .ui.dropdown .menu{
+
+}
+/*
+header .caption .search-box .ui.dropdown .menu{
+    background: rgba(225,225,225,0.1);
+    border: 1px solid rgba(225,225,225,.2)
+}
+header .caption .search-box .ui.dropdown .menu>.item:hover{
+        background: rgba(225,225,225,.3);
+}
+*/
+header .caption .search-box input{
+    background:none;
+    border:none;
+    width:320px;
+    padding:14px;
+}
+header .caption .search-box input::-webkit-input-placeholder{
+    color:#666
+}
+header .caption .search-box .ui.search.dropdown>.text{color:#444}
+header .caption .search-box .ui.selection.dropdown>.dropdown.icon{color:#999}
+header .caption .search-box input:focus,
+header .caption .search-box select:focus{outline:none}
+header .caption .search-box select{
+    border:none;
+    background:none;
+    color:#d0d0d0;
+    border-left:1px solid rgba(225,225,225,0.1);
+    border-right:none;
+    padding:10px;
+}
+header .caption .search-box .ui.selection.dropdown{
+    border:none !important;
+    background:none !important;
+    color:#d0d0d0;
+    border-left:1px solid #ddd !important;
+    border-right:none;
+    padding:10px;
+    min-width:140px;
+    width:140px
+}
+.ui.selection.dropdown .menu>.item{font-size:12px}
+header .brands1{
+    height:100%;
+    top:100px;
+    position:absolute;
+    left:0;
+    width:40px
+}
+header .brands1 img{
+    height:80px;
+    width:100%;
+    margin:10px 0;
+    transition:opacity 1s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+    -webkit-filter:opacity(0.5);
+    -moz-filter:opacity(0.5);
+    -ms-filter:opacity(0.5);
+    -o-filter:opacity(0.5);
+    filter:opacity(0.5);
+}
+header .brands1 img:hover{
+    -webkit-filter:opacity(1);
+    -moz-filter:opacity(1);
+    -ms-filter:opacity(1);
+    -o-filter:opacity(1);
+    filter:opacity(1);
+    width:150%;
+
+}
+/*start nav section */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:10px 0;
+    z-index:9
+}
+.white{
+    background-color: #fff;
+    border-bottom:1px solid #CCC
+}
+.white .logo h3{
+    color: #6d0909
+}
+.white .nav-menu li{
+    color :#6d0909
+}
+.white .nav-menu li a{
+    color :#6d0909
+}
+nav .logo h3{
+    margin-top:0;
+    margin-bottom:0;
+    color:#a7a7a7;
+    font-family: 'Ubuntu', sans-serif;
+}
+nav .logo h3 span{
+    color:#6d0909;
+    font-weight: bold;
+}
+nav .nav-menu {
+    text-align:right;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom:0
+} 
+nav  .nav-menu li{
+    display:inline-block;
+    margin:0 20px;
+    color:#a7a7a7;
+    font-size:16px;
+    text-transform: capitalize
+}
+nav  .nav-menu li a{
+    text-decoration:none;
+    display:inline-block;
+    color:#a7a7a7;
+    transition:color 0.2s ease-in-out
+}
+nav  .nav-menu li button{
+    background:none;
+    border:1px solid #a7a7a7;
+    border-radius:3px;
+    padding:3px 10px 5px;
+    text-transform: capitalize;
+    transition:color 0.2s ease-in-out
+}
+nav  .nav-menu li a:hover,
+nav  .nav-menu li button:hover{
+    color:#fff
+}
+.white .nav-menu li a:hover{color:#6d0909}
+.white  .nav-menu li button{transition:all 0.2s ease-in-out}
+.white  .nav-menu li button:hover{
+    background-color:#6d0909;
+    color:#fff;
+    border:1px solid #6d0909;
+}
+
+/*end nav section */
+
+/* start best-resturants section */
+.best-resturants h2{
+    font-size:34px;
+    margin:30px 40px;
+    text-transform:capitalize
+}
+.best-resturants .brands{
+    margin:55px 0;
+    overflow:hidden
+}
+.best-resturants .brand-img{
+    margin-bottom:50px
+}
+.best-resturants .brand-img img{
+    width:100%;
+    height:100px
+}
+
+/* end best-resturants section */
+
+/* start achievments section */
+.achievments{
+    position:relative;
+    padding:40px 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-image:url('../images/food-pizza-restaurant-eating.jpg');
+    background-size:100% 100%
+}
+.achievments .container{
+    padding:40px 0
+}
+.achievments .overlay{
+    background-color:rgba(3,3,3,0.8);
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0;
+}
+.achievments .counter{
+    color:#fff
+}
+.achievments .counter span{
+    font-size:50px;
+    font-weight:300
+}
+.achievments .counter p{
+    font-size: 18px;
+    color:#9e9e9e
+}
+/* end achievments section */
+
+/*start get-app secion */
+.get-app{
+    padding:50px 0 80px;
+    background-size:100% 100%;
+    color:#000;
+    font-family: 'Ubuntu', sans-serif;
+}
+.get-app .intro {
+    padding:30px 0
+}
+.get-app .intro h2{
+    font-weight:300;
+}
+.get-app .intro p
+{
+    color:#d70f64;
+    font-weight:300;
+    font-size:38px
+}
+.get-app .mobile-img{
+    padding: 0 25px
+}
+.get-app .mobile-img img{
+    height:445px;
+    width:177px;
+}
+.get-app .download-buttons{
+    height: 445px;
+    padding-top: 175px;
+}
+.get-app .download-buttons a{
+    display:block;
+    margin-bottom:20px
+}
+.get-app .download-buttons a img
+{
+    width:100%    
+}
+/*end get-app section */
+
+/* start footer section */
+.footer{
+    background-color:#0c0c0e;
+    padding:25px 0
+}
+.footer .container{
+    padding:20px 0
+}
+.footer ul {
+    margin-left:40px
+}
+.footer ul li a{
+    margin:13px 0;
+    color:#FFF;
+    display:block
+}
+.footer ul li a:hover,
+.footer ul li a:focus{
+    text-decoration: none;
+}
+.footer .newsletter{
+}
+.footer .newsletter .ui.search.dropdown{
+    height:40px;
+    min-width:9em;
+    margin-left:15px;
+    border:1px solid #fff;
+    color:#333
+}
+.footer .ui.dropdown:not(.button)>.default.text{
+    color:#333
+}
+.footer .ui.selection.dropdown .menu>.item
+{
+    padding:1.09571429rem 1.14285714rem!important;
+}
+.footer .ui.dropdown .menu>.item{
+    font-size:1.3rem;
+}
+.footer .newsletter h2{
+    margin-top:0;
+    color:#fff
+}
+.footer .newsletter P{
+    color:#fff
+}
+.footer .newsletter input[type='email']{
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    background-color:#fff;
+    border-radius:3px
+}
+.footer .newsletter input[type='email']::-webkit-input-placeholder{
+    color: #333
+}
+.footer .newsletter input[type='submit']{
+    background-color:#191919;
+    border:1px solid #1d1d1d;
+    border-radius:3px;
+    color:#DDD;
+    padding:7px 16px;
+    margin-top:10px;
+    transition:all 0.2s ease-in-out;
+}
+.footer .newsletter input[type='submit']:hover{
+    box-shadow:1px 1px 5px #000;
+}
+.footer .newsletter select{
+    height: 40px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin-left:15px
+}
+
+/*end footer section */
+
+/*start copyright section */
+.copyright{
+    background-color:#08080a;
+    text-align:center
+}
+.copyright ul{margin-bottom:0}
+.copyright ul li{
+    display:inline-block
+}
+.copyright ul li a{
+    display:inline-block;
+    margin:10px;
+    width:40px;
+    color:#565656;
+    border-radius:50%;
+    height:40px;
+    border:1px solid #1c1c23;
+    line-height:40px;
+    transition:all 0.3s ease-in-out
+}
+.copyright ul li.facebook a:hover
+{
+    background-color:#3b5998;
+    color:#fff;
+    border-color:#3b5998
+}
+.copyright ul li.twitter a:hover
+{
+    background-color:#1da1f2;
+    color:#fff;
+    border-color:#1da1f2
+}
+.copyright ul li.instagram a:hover
+{
+    background-color:#e1306c;
+    color:#fff;
+    border-color:#e1306c
+}
+.copyright ul li.youtube a:hover
+{
+    background-color:#cd201f;
+    color:#fff;
+    border-color:#cd201f
+}
+.copyright ul li.google-plus a:hover
+{
+    background-color:#dd4b39;
+    color:#fff;
+    border-color:#dd4b39
+}
+.copyright .owner{
+    font-family: 'Ubuntu', sans-serif;
+}
+.copyright .owner p{font-weight:bold}
+.copyright .owner p a{
+    color:#353535;
+    transition:all 0.2s ease-in-out
+}
+.copyright .owner p a:hover
+{
+    color:#d70f64
+}
+.copyright .owner p a:hover,
+.copyright .owner p a:focus{
+    text-decoration:none
+}
+.copyright .owner p a span{
+    font-family: 'Covered By Your Grace', cursive;
+    font-size:22px
+}
+/*end copyright section */
